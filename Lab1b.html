@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1b</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: row; ">
+        <div class="block">A</div>
+        <div class="block">B</div>
+        <div class="block">C</div>
+        <div class="block">D</div>
+        <div class="block">E</div>
+    </div>
+    <div style="align-self: flex-end; justify-self: end;">
+        <div class="block">F</div>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        justify-content: space-between;
+        font-family: Tahoma; 
+        height: 100vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(blue, transparent);    }
+    .block{
+        background-color:  #eeeff2;
+        height:150px;
+        width:100px;
+        margin-right: 10px ;
+        font-size: 40px ;
+        display: flex;
+        padding-left: 10px;
+        border-left-style: dotted;
+        border-left: 10px dotted #D0D0FF;   
+        transition: width 2s, height 2s;
+        animation-name: example;
+        animation-duration: 4s;
+        text-shadow: 4px 2px 5px black;
+    }
+    .block:hover {
+        color: goldenrod;
+        background-color:  yellow;
+        width: 200px;
+        height: 300px;
+    }
+    @keyframes example {
+        from {background-color: #687291;}
+        to {background-color: #eeeff2;}
+}
+</style>
