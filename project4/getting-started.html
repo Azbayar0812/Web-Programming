@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="cs142App" ng-controller="MainController">
+    <head>
+        <title>{{main.title || "CS142 Class Project"}}</title>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="mainController.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="components/example/exampleController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/example/example.css" />
+        <script src="modelData/example.js"></script>
+
+        <script src="components/header/headerController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/header/header.css" />
+        <script src="modelData/header.js"></script>
+
+        <script src="node_modules/angular-route/angular-route.min.js"></script>
+    </head>
+    <body>
+        <div ng-include="'components/header/headerTemplate.html'" ng-controller="HeaderController"></div>
+
+        <div class="header">
+            <p> Name: "Azbayar" </p>
+        </div> 
+        <div ng-include="'components/example/exampleTemplate.html'" ng-controller="ExampleController"></div>
+    </body>
+</html>
